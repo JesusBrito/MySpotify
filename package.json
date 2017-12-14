@@ -1,0 +1,11 @@
+{
+  "name": "music_online",
+  "version": "1.0.0",
+  "description": "web app using the mean stack to development my own version of spotify",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "JesusBrito",
+  "license": "MIT"
+}
