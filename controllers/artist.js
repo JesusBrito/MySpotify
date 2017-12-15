@@ -9,7 +9,16 @@ var Song= require('../models/song');
 
 
 function getArtist(req, res){
-	res.status(200).send({message:'Metodo getArtist del controlador Artist'});
+	var artistId= req.params.id;
+	Artist.findById(artistId,(err,artist)=>{
+		if (err){
+			res.status(500).send({message:'Error en la petición'});
+		}else if(!artist){
+			res.status(404).send({message:'El artista no existe'});
+		}else {
+			res.status(200).send({artist});
+		}
+	});
 }
 
 function saveArtist(req, res){
