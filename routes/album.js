@@ -1,4 +1,4 @@
-'use strinct'
+'use strict'
 
 var express = require('express');
 var AlbumController= require('../controllers/album');
